@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Listes des etudiants</title>
+    </h:head>
+    <h:body>
+        <style>
+            .ligne1 {
+                color: white;
+                background: lightblue;
+            }
+            .ligne2{
+                color:white;
+                background: grey;
+            }
+        </style>
+        <h2 class="titre">
+            Liste des étudiants
+        </h2>
+        <p:dataTable style="width: 75rem" value="#{listEtudiantBean.etudiants}" var="e" selection="#{e}" selectionMode="single" rowKey="#{e.id}">
+            <p:column>
+                <f:facet name="header">
+                    Prenom
+                </f:facet>
+                #{e.prenom}
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                   Nom 
+                </f:facet>
+                #{e.nom}
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                   Email 
+                </f:facet>
+                #{e.email}
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                   Adresse 
+                </f:facet>
+                #{e.adresse}
+            </p:column>
+            <p:column>
+                <f:facet name="header">
+                   Telephone 
+                </f:facet>
+                #{e.tel}
+            </p:column>
+        </p:dataTable>
+        <h:form>
+            <p:commandButton immediate="true" value="Ajout Etudiant" action="ajout_etudiant.xhtml?faces-redirect=true"></p:commandButton>
+        </h:form>
+        
+    </h:body>
+</html>
+

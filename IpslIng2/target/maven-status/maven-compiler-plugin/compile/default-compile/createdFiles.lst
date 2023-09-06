@@ -1,0 +1,14 @@
+sn\edu\ugb\ipsl\ipsling2\metier\AbstractFacade.class
+sn\edu\ugb\ipsl\ipsling2\metier\InitEtudiant.class
+sn\edu\ugb\ipsl\ipsling2\PDFBuilder.class
+sn\edu\ugb\ipsl\ipsling2\resources\JakartaEE8Resource.class
+sn\edu\ugb\ipsl\ipsling2\Helloservlet.class
+sn\edu\ugb\ipsl\ipsling2\AjoutEtudiant.class
+sn\edu\ugb\ipsl\ipsling2\metier\StartupBean.class
+sn\edu\ugb\ipsl\ipsling2\ListEtudiantLazy$1.class
+sn\edu\ugb\ipsl\ipsling2\ListEtudiantBean.class
+sn\edu\ugb\ipsl\ipsling2\metier\EtudiantFacade.class
+sn\edu\ugb\ipsl\ipsling2\Etudiant.class
+sn\edu\ugb\ipsl\ipsling2\ListEtudiantLazy.class
+sn\edu\ugb\ipsl\ipsling2\validator\TelephoneValidator.class
+sn\edu\ugb\ipsl\ipsling2\JakartaRestConfiguration.class
